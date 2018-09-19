@@ -99,9 +99,11 @@ function CheckDocsPolicy(repoName, repoPath) {
 const repoName = "NEJR-docs";
 const repoPath = "/Users/luis-jaime/codesamples/md-html/showdownjs/db/docs";
 
-CheckDocsPolicy(repoName, repoPath)
-.then( (analysis) => {
-    if(!analysis.broken_docs || analysis.broken_docs.length>0){
-        throw new Error("Missing required documentation in repo: \n\r" + analysis.broken_docs);
-    }
-});
+// CheckDocsPolicy(repoName, repoPath)
+// .then( (analysis) => {
+//     if(!analysis.broken_docs || analysis.broken_docs.length>0){
+//         throw new Error("Missing required documentation in repo: \n\r" + analysis.broken_docs);
+//     }
+// });
+
+console.log("Hello World!")
