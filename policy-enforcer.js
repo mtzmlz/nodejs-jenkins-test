@@ -2,7 +2,7 @@ const path = require('path');
 const fs   = require('fs');
 const http = require('http');
 
-var docsServerUrl = process.env.DOCS_SERVER_URL || 'http://localhost:8080'
+var docsServerUrl = process.env.DOCS_SERVER_URL || 'http://showdownjs-docs-server.dev.cloudapp.banregio.com/'
 
 function checkMatchingPolicies (repoName) {
     return new Promise(function(resolve, reject){
